@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Короткие курсы — Платформа видеокурсов</title>
+    <meta name="description" content="Научитесь новому за 30–90 минут. Excel, Photoshop, Python, кулинария и ещё 50+ направлений.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg class="logo-icon" width="36" height="36" viewBox="0 0 28 28" fill="none">
+                    <rect width="28" height="28" rx="6" fill="#2563EB"/>
+                    <path d="M14 7L9 10v6l5 3 5-3v-6L14 7z" fill="#fff"/>
+                </svg>
+                <span class="logo-text">Курсы</span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#courses" class="nav-link" aria-label="Курсы">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                </a>
+                <a href="#faq" class="nav-link" aria-label="FAQ">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                </a>
+                <a href="#pricing" class="nav-link" aria-label="Тарифы">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </a>
+            </nav>
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <div class="badge">🎓 Практические навыки за 30–90 минут</div>
+                <h1>Короткие курсы.<br><span class="accent">Реальные навыки.</span></h1>
+                <p>Научитесь новому за 30–90 минут. Excel, Photoshop, Python, кулинария и ещё 50+ направлений.</p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary btn-lg">Выбрать курс</a>
+                    <a href="#pricing" class="btn btn-ghost btn-lg">Тарифы</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card card-1">
+                    <div class="card-icon">📊</div>
+                    <div class="card-label">Excel</div>
+                    <div class="card-value">$9.99</div>
+                    <div class="card-change up">⭐ 4.8</div>
+                </div>
+                <div class="hero-card card-2">
+                    <div class="card-icon">🎨</div>
+                    <div class="card-label">Photoshop</div>
+                    <div class="card-value">$14.99</div>
+                    <div class="card-change up">⭐ 4.9</div>
+                </div>
+                <div class="hero-card card-3">
+                    <div class="card-icon">🐍</div>
+                    <div class="card-label">Python</div>
+                    <div class="card-value">$19.99</div>
+                    <div class="card-change up">⭐ 4.9</div>
+                </div>
+                <div class="hero-card card-4">
+                    <div class="card-icon">🧮</div>
+                    <div class="card-label">Финансы</div>
+                    <div class="card-value">$24.99</div>
+                    <div class="card-change up">⭐ 4.7</div>
+                </div>
+                <div class="hero-card card-5">
+                    <div class="card-icon">📝</div>
+                    <div class="card-label">Копирайтинг</div>
+                    <div class="card-value">$17.99</div>
+                    <div class="card-change up">⭐ 4.6</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Популярные курсы</h2>
+                <p>Выберите направление и начните обучение прямо сейчас</p>
+            </div>
+            <div class="courses-grid" id="courses-grid">
+                <!-- Карточки курсов будут добавлены скриптом -->
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-it-works" class="section how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>Как это работает</h2>
+                <p>Три простых шага до нового навыка</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h4>Выберите курс</h4>
+                    <p>Более 50 направлений: от Excel до Python. Каждый курс — 30–90 минут практики.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h4>Оплатите и начните</h4>
+                    <p>Принимаем карты, ЮMoney, СБП. Доступ открывается мгновенно после оплаты.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h4>Применяйте сразу</h4>
+                    <p>Каждый урок — практическое задание. Результат заметен уже после первого занятия.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="section benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Преимущества</h2>
+                <p>Почему выбирают нас</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <h3 class="benefit-title">Скорость</h3>
+                    <p class="benefit-description">Быстрая загрузка и отзывчивый интерфейс</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                    </div>
+                    <h3 class="benefit-title">Адаптивность</h3>
+                    <p class="benefit-description">Отлично работает на всех устройствах</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="benefit-title">Безопасность</h3>
+                    <p class="benefit-description">Защита данных и безопасные платежи</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="benefit-title">Сообщество</h3>
+                    <p class="benefit-description">10 000+ студентов и преподавателей</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3 class="benefit-title">Гибкость</h3>
+                    <p class="benefit-description">Учитесь в своём темпе, в любое время</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                    </div>
+                    <h3 class="benefit-title">Сертификаты</h3>
+                    <p class="benefit-description">Получите подтверждение навыков</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Частые вопросы</h2>
+                <p>Ответы на популярные вопросы</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Как начать обучение?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Выберите курс, оплатите и получите мгновенный доступ. Никаких сложных регистраций.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Сколько длится курс?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Каждый курс — от 30 до 90 минут. Вы учитесь в своём темпе.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Есть ли возврат?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, мы гарантируем возврат в течение 14 дней, если курс вам не подошёл.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Тарифы</h2>
+                <p>Выберите подходящий план</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Старт</h3>
+                        <div class="price">$9.99<span>/мес</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Доступ к 10 курсам</li>
+                        <li>✓ Сертификаты</li>
+                        <li>✓ Поддержка по email</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Выбрать</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Премиум</h3>
+                        <div class="price">$19.99<span>/мес</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Доступ ко всем курсам</li>
+                        <li>✓ Сертификаты</li>
+                        <li>✓ Приоритетная поддержка</li>
+                        <li>✓ Офлайн-доступ</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Выбрать</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Энтерпрайз</h3>
+                        <div class="price">$49.99<span>/мес</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ До 10 участников</li>
+                        <li>✓ Все функции Премиум</li>
+                        <li>✓ Аналитика команды</li>
+                        <li>✓ Персональный менеджер</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Выбрать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <rect width="28" height="28" rx="6" fill="#1a73e8"/>
+                        <path d="M14 7L9 10v6l5 3 5-3v-6L14 7z" fill="#fff"/>
+                    </svg>
+                    <span>CourseHub</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Навигация</h4>
+                        <a href="#courses">Курсы</a>
+                        <a href="#how-it-works">Как это работает</a>
+                        <a href="#benefits">Преимущества</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#pricing">Тарифы</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>О нас</h4>
+                        <a href="about.html">О нас</a>
+                        <a href="https://t.me/your_channel" target="_blank" rel="noopener">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Платформа коротких видеокурсов</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
